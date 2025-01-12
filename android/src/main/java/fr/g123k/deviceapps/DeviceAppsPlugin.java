@@ -286,8 +286,8 @@ public class DeviceAppsPlugin implements
         map.put(AppDataConstants.UPDATE_TIME, pInfo.lastUpdateTime);
         map.put(AppDataConstants.IS_ENABLED, applicationInfo.enabled);
 
-        if (applicationInfo.splitNames != null) {
-            map.put(AppDataConstants.IS_SPLIT, (applicationInfo.splitNames.length > 1));
+        if (applicationInfo.splitPublicSourceDirs != null) {
+            map.put(AppDataConstants.IS_SPLIT, (applicationInfo.splitPublicSourceDirs.length > 1));
         } else {
             map.put(AppDataConstants.IS_SPLIT, false);
         }
